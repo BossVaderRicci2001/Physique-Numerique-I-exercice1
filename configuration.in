@@ -1,0 +1,18 @@
+% Parametres physiques :
+tfin     = 1.5e-12  % temps total maximal de simulation [s]
+mass_e   = 9.109e-31    % mass de la particule test [kg]
+charge_e = -1.6022e-19  % charge de la particule test [C] 
+charge_t = 118.5628e-19 % charge de l ion T [C]
+charge_c = 9.6132e-19   % charge de l ion C [C]
+x_t      = 0.e0         % position de l ion T [m]
+x_c      = 1.e-6        % position de l ion C [m]
+x_0      = 5.e-7        % position initiale de la charge [m]
+v_0      = 1.e5   % vitesse initiale en [m/s]
+v_bar    = 1.e4         % vitesse de baseline de la force de friction [m/s]
+alpha    = 1.e-5      % coefficient de friction [kg*m^3/s^4]
+deltaF   = 0.e0        % selecteur du modele =1: la friction est active
+
+% Parametres numeriques :
+nsteps   = 5000  % nombre de pas de temps maximal (dt=tfin/nsteps)
+output   = output.out % nome/adresse du fichier d'output
+sampling = 0          % nombre de pas de temps entre deux ecritures, no sampling = 0
